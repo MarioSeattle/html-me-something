@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3em;
+}
+
+.main,
+footer,
+header {
+  position: relative;
+  margin: 0.5em;
+  border: 1px solid #FF0000;
+}
+
+.leftColumn,
+.rightColumn,
+footer,
+header {
+  border: 1px solid #9bea00;
+  padding: 1.25em;
+}
+
+.leftColumn {
+  margin: 0.5em;
+}
+.rightColumn {
+  margin: 0.5em;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 47.5em) {
+  .leftColumn {
+    margin-right: 19.5em;
+  }
+
+  .rightColumn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18.75em;
+  }
+}
